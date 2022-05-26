@@ -26,6 +26,7 @@ function selectWinnerBoxes(b1, b2, b3) {
 }
 
 function getwinner() {
+  //get all boxes
   var box1 = document.getElementById("r1"),
     box2 = document.getElementById("r2"),
     box3 = document.getElementById("r3"),
@@ -35,33 +36,6 @@ function getwinner() {
     box7 = document.getElementById("r7"),
     box8 = document.getElementById("r8"),
     box9 = document.getElementById("r9");
-
-  /*if (
-          box1.innerHTML === "O" ||
-          box2.innerHTML === "O" ||
-          box3.innerHTML === "O" ||
-          box4.innerHTML === "O" ||
-          box5.innerHTML === "O" ||
-          box6.innerHTML === "O" ||
-          box7.innerHTML === "O" ||
-          box8.innerHTML === "O" ||
-          box9.innerHTML === "O"
-        ) {
-          document.getElementById("msg").innerHTML = "X Turn";
-        } else if (
-          box1.innerHTML === "X" ||
-          box2.innerHTML === "X" ||
-          box4.innerHTML === "X" ||
-          box5.innerHTML === "X" ||
-          box6.innerHTML === "X" ||
-          box7.innerHTML === "X" ||
-          box8.innerHTML === "X" ||
-          box9.innerHTML === "X"
-        ) {
-          document.getElementById("msg").innerHTML = "O Turn";
-        } else if (box3.innerHTML === "X") {
-          document.getElementById("msg").innerHTML = "O Turn";
-        }*/
 
   //get all posibilites
   if (
@@ -148,6 +122,7 @@ function getwinner() {
     box9.innerHTML !== ""
   ) {
     document.getElementById("result").innerHTML = "!draw";
+    document.getElementById("winDialog").style.background = "blue";
     document.getElementById("winDialog").showModal();
     document.getElementById("msg").innerHTML = "!draw";
     document.getElementById("msg").style.background = "blue";
@@ -163,10 +138,4 @@ function Message(sign) {
   } else {
     document.getElementById("msg").innerHTML = "O Turn";
   }
-  // var boxes = document.getElementsByClassName("box");
-  // for (var i = 0; i < boxes.length; i++) {
-  //   if (boxes[i].innerHTML == "X") {
-  //     document.getElementById("msg").innerHTML = "O Turn";
-  //   }
-  // }
 }
