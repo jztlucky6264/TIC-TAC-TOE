@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  background-color: rgb(231, 7, 7);
+}
+
+.heading h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0rem 2rem 0rem;
+  text-align: center;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255);
+}
+.turn_msg {
+  text-align: center;
+}
+.turn_msg .msg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 30%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 3rem;
+  color: aqua;
+  background: green;
+  border: 3px solid orange;
+}
+
+.table_div {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table_main tr td {
+  width: 100px;
+  height: 100px;
+  background: whitesmoke;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+.table_main tr td:hover {
+  background: blueviolet;
+  color: #fcf7f7;
+}
+.replay_div {
+  text-align: center;
+}
+.replay_div .replay_btn {
+  background: #26c281;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  width: 15vw;
+  cursor: pointer;
+}
+.winnig_msg {
+  width: 100vw;
+}
+.winnig_msg .winDialog {
+  background-color: rgb(254, 72, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 10vw;
+  height: 17vh;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
