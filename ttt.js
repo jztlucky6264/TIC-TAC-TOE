@@ -126,6 +126,7 @@ function getwinner() {
     document.getElementById("winDialog").showModal();
     document.getElementById("msg").innerHTML = "!draw";
     document.getElementById("msg").style.background = "blue";
+    document.getElementsById("pop_up_btn").style.background = "blue";
   }
 }
 

@@ -5,7 +5,7 @@
   font-size: 16px;
 }
 body {
-  background-color: rgb(231, 7, 7);
+  background-color: LightGray;
 }
 
 .heading h1 {
@@ -67,8 +67,25 @@ body {
 }
 
 .winDialog {
+  width: 10vw;
+  height: 20vh;
   background-color: rgb(254, 72, 72);
   position: absolute;
   top: 45%;
   left: 45%;
+  text-align: center;
+}
+.winDialog h2 {
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+.winDialog button {
+  background: red;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #ffff;
+  cursor: pointer;
 }
