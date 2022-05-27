@@ -55,7 +55,7 @@ body {
   text-align: center;
 }
 .replay_div .replay_btn {
-  background: #26c281;
+  background: blue;
   padding: 0.5rem;
   outline: none;
   border: none;
@@ -90,4 +90,9 @@ body {
   font-weight: bold;
   border: 2px solid #ffff;
   cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  section {
+    display: none;
+  }
 }
