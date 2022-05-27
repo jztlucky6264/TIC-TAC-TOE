@@ -5,7 +5,7 @@
   font-size: 16px;
 }
 body {
-  background-color: LightGray;
+  background-color: rgba(121, 90, 247, 0.511);
 }
 
 .heading h1 {
@@ -27,9 +27,9 @@ body {
   margin-bottom: 1rem;
   outline: none;
   border-radius: 3rem;
-  color: aqua;
-  background: green;
-  border: 3px solid orange;
+  color: #fff;
+  background: #c62168;
+  border: 3px solid rgb(243, 241, 237);
 }
 
 .table_div {
@@ -67,6 +67,7 @@ body {
 }
 
 .winDialog {
+  border: 2px solid #fff;
   width: 10vw;
   height: 20vh;
   background-color: rgb(254, 72, 72);
@@ -76,6 +77,7 @@ body {
   text-align: center;
 }
 .winDialog h2 {
+  color: #fff;
   margin: 2rem 2rem 0.5rem 2rem;
 }
 .winDialog button {
