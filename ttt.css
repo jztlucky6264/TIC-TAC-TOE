@@ -5,7 +5,22 @@
   font-size: 16px;
 }
 body {
-  background-color: rgba(121, 90, 247, 0.511);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .heading h1 {
@@ -28,10 +43,48 @@ body {
   outline: none;
   border-radius: 3rem;
   color: #fff;
-  background: #c62168;
   border: 3px solid rgb(243, 241, 237);
+  background: linear-gradient(289deg, #d3e1b8, #c2b8e1, #14c587, #9b519f);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 29s ease infinite;
+  -moz-animation: AnimationName 29s ease infinite;
+  animation: AnimationName 29s ease infinite;
 }
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 44%;
+  }
+  50% {
+    background-position: 100% 57%;
+  }
+  100% {
+    background-position: 0% 44%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 44%;
+  }
+  50% {
+    background-position: 100% 57%;
+  }
+  100% {
+    background-position: 0% 44%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 44%;
+  }
+  50% {
+    background-position: 100% 57%;
+  }
+  100% {
+    background-position: 0% 44%;
+  }
+}
 .table_div {
   width: 100vw;
   height: 60vh;
@@ -48,14 +101,61 @@ body {
   border-radius: 10px;
 }
 .table_main tr td:hover {
-  background: blueviolet;
+  background: linear-gradient(
+    289deg,
+    #88b729,
+    #d3e1b8,
+    #c2b8e1,
+    #f51a48,
+    #7b1a6b,
+    #14c587,
+    #f29223
+  );
+  background-size: 1400% 1400%;
   color: #fcf7f7;
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+
 .replay_div {
   text-align: center;
 }
 .replay_div .replay_btn {
-  background: blue;
   padding: 0.5rem;
   outline: none;
   border: none;
@@ -64,6 +164,46 @@ body {
   font-weight: bold;
   width: 15vw;
   cursor: pointer;
+  background: linear-gradient(220deg, #d3e1b8, #c2b8e1, #14c587, #27c8b4);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 77% 0%;
+  }
+  50% {
+    background-position: 24% 100%;
+  }
+  100% {
+    background-position: 77% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 77% 0%;
+  }
+  50% {
+    background-position: 24% 100%;
+  }
+  100% {
+    background-position: 77% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 77% 0%;
+  }
+  50% {
+    background-position: 24% 100%;
+  }
+  100% {
+    background-position: 77% 0%;
+  }
 }
 
 .winDialog {
@@ -91,8 +231,21 @@ body {
   border: 2px solid #ffff;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 1024px) {
   section {
     display: none;
+  }
+  .warnuser_text:before {
+    content: attr(data-employeename);
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #fff;
+  }
+  .warning_users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }
